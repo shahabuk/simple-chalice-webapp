@@ -1,0 +1,6 @@
+/.idea
+*.iml
+/venv39
+__pycache__
+/.chalice/deployed
+/.chalice/deployments
