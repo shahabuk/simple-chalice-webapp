@@ -52,7 +52,11 @@ open http://127.0.0.1:8001
 
 ### To deploy to the internet
 
-... and open the url just deployed to:
+```
+chalice deploy
+```
+
+and open the url just deployed to, or do this to avoid having to copy/paste the url:
 
 ```
 chalice deploy | tee tempout.txt && open `grep "Rest API URL" tempout.txt | cut -d " " -f 7` && rm tempout.txt

@@ -1,6 +1,6 @@
 /.idea
 *.iml
-/venv39
+/venv
 __pycache__
 /.chalice/deployed
 /.chalice/deployments
