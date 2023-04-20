@@ -38,6 +38,12 @@ If not already in virtual environment (indicated by change in prompt to show "(v
 source venv/bin/activate
 ```
 
+### To run the tests
+
+```
+py.test
+```
+
 ### To run locally
 
 ```
