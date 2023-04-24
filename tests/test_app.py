@@ -22,6 +22,14 @@ def test_unknown_is_handled():
         assert "Unknown" in actual
 
 
+def test_new_york_is_recognised():
+    with Client(app) as client:
+        response = client.http.get('/location?place=New York')
+        actual = response.body.decode("UTF-8")
+        assert "New York" in actual
+        assert "state capital" in actual
+
+
 def random_string():
     list_of_letters = list(string.ascii_letters)
     random.shuffle(list_of_letters)
